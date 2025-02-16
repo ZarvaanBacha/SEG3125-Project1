@@ -1,0 +1,41 @@
+/* Global Component Styles: components.css */
+
+/* Reusable Content Box */
+.content-box {
+    background-color: #D5D4D4; /* Light gray background for the content box */
+    padding: 20px 40px; /* Adjusted padding for better visual balance */
+    border-radius: 10px; /* Rounded corners for the box */
+    position: relative; /* Needed for absolute positioning of the title */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adding shadow for depth */
+    max-width: 696px; /* Maximum width */
+    max-height: 556px; /* Maximum height */
+    width: 48%; /* Ensures two boxes fit side by side */
+    height: auto; /* Allows height to expand with content */
+    text-align: left; /* Aligns text properly */;
+}
+
+/* Reusable Content Box Title */
+.content-title {
+    background-color: rgba(213, 209, 92, 0.9);
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2px;
+    z-index: 10;
+}
+
+/* Content Box Title Text */
+.content-title-text {
+    font-family: 'Alumni Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 24px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

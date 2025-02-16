@@ -1,0 +1,114 @@
+/* Master Stylesheet */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Alumni Sans', sans-serif; /* Default font for the body */
+    background-color: #9FBF63; /* Set the background color to a light green */
+}
+
+.header-title {
+    text-align: center;
+    color: white;
+    font-family: 'Rouge Script', cursive; /* Assuming you have the font linked or available */
+    font-size: 128px;
+    margin: 0;
+    padding-top: 20px; /* Adjusts the space from the top */
+    
+}
+
+.header-title a {
+    text-decoration: none;  /* Removes underline */
+    color: inherit;         /* Keeps the same text color */
+    cursor: pointer;        /* Makes it clear it's clickable */
+}
+
+.header-subtitle {
+    text-align: center;
+    color:  #FFFF00; /* Adjusted to a specific yellow */
+    font-size: 64px;
+    font-weight: 300; /* Light font-weight, assuming Alumni Sans supports this */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #D5D4D4; /* Light gray background */
+    border-radius: 20px; /* Rounded corners */
+    width: 1440px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    margin: 20px auto; /* Centering the navbar */
+    display: flex;
+    align-items: center; /* Centers the items vertically */
+    justify-content: center;
+    position: relative
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%; /* Takes full width of the navbar */
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 48px;
+    padding: 3px 40px;
+    transition: background-color 0.3s;
+}
+
+.nav-item a:hover, .nav-item.active a {
+    color: white; /* Corrected text color to white on hover and for active item */
+    background-color: #D5D15C; /* Background color for active item */
+    border-radius: 20px; /* Rounded corners for the active item background */
+    padding: 3px 40px; /* Consistent padding */
+    box-sizing: border-box; /* Includes padding and border in the width and height */
+    width: auto; /* Auto width to adjust with padding */
+}
+
+/* Active Navigation Item (Yellow Background) */
+.nav-item.active a {
+    background-color: #D5D15C !important; /* Ensure it takes effect */
+    color: black; /* Make text white for visibility */
+    border-radius: 20px;
+    padding: 3px 40px;
+    box-sizing: border-box;
+}
+
+/* Footer Styling */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color:  #9FBF63;
+    position: relative;
+}
+
+/* Social Media Icons in Footer */
+.footer-social-icons {
+    display: flex;
+    gap: 20px; /* Space between icons */
+    align-items: center;
+}
+
+.footer-social-icons a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+    align-items: center;
+}
+
+.footer-social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+/* Add bottom spacing only when on Products page */
+.products-page footer {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}

@@ -1,0 +1,121 @@
+{
+    "specials": [
+        {
+            "category": "Deli & Cooler",
+            "images": [
+                "../specials/images/deli&cooler/deli1.png",
+                "../specials/images/deli&cooler/deli2.png"
+            ],
+            "items": [
+                {
+                    "sub_category": "Deli",
+                    "name": "Honey Maple Ham",
+                    "price": "$1.99 / 100g"
+                },
+                {
+                    "sub_category": "Deli",
+                    "name": "Italian Pancetta",
+                    "price": "$4.49 / 100g"
+                },
+                {
+                    "sub_category": "Specialty Cheeses",
+                    "name": "Old Amsterdam Gouda",
+                    "price": "$7.49 / 100g"
+                },
+                {
+                    "sub_category": "Specialty Cheeses",
+                    "name": "Comte",
+                    "price": "$6.99 / 100g"
+                },
+                {
+                    "sub_category": "Specialty Cheeses",
+                    "name": "Sorcier De Missiquoi",
+                    "price": "$6.99 / lb"
+                },
+                {
+                    "sub_category": "Freezer & Cooler",
+                    "name": "Vegan Spread",
+                    "price": "$8.99 – 425g"
+                },
+                {
+                    "sub_category": "Freezer & Cooler",
+                    "name": "Supreme Perogies",
+                    "price": "$5.99 – 454g"
+                },
+                {
+                    "sub_category": "Freezer & Cooler",
+                    "name": "Strawberries and Banana",
+                    "price": "$5.99 – 600g"
+                }
+            ]
+        },
+        {
+            "category": "Butcher Shop",
+            "images": [
+                "../specials/images/butchershop/meat1.png",
+                "../specials/images/butchershop/meat2.png"
+            ],
+            "items": [
+                {
+                    "sub_category": "Butcher Shop",
+                    "name": "Beef Blade Chuck Roast",
+                    "price": "$9.99 / lb"
+                },
+                {
+                    "sub_category": "Butcher Shop",
+                    "name": "Beef Blade Chuck Eye Steak",
+                    "price": "$10.99 / lb"
+                },
+                {
+                    "sub_category": "Butcher Shop",
+                    "name": "Pork Boneless Chops Seasoned",
+                    "price": "$7.99 / lb"
+                },
+                {
+                    "sub_category": "Butcher Shop",
+                    "name": "Boneless Chicken Thigh Family Pack",
+                    "price": "$6.99 / lb"
+                },
+                {
+                    "sub_category": "Butcher Shop",
+                    "name": "Boneless Chicken Thigh",
+                    "price": "$7.49 / lb"
+                }
+            ]
+        },
+        {
+            "category": "Produce",
+            "images": [
+                "../specials/images/produce/produce1.png",
+                "../specials/images/produce/produce2.png"
+            ],
+            "items": [
+                {
+                    "sub_category": "Produce",
+                    "name": "Yukon Gold Potatoes",
+                    "price": "$1.99 / lb"
+                },
+                {
+                    "sub_category": "Produce",
+                    "name": "Tomato Vine Ripe",
+                    "price": "$1.99 / lb"
+                },
+                {
+                    "sub_category": "Produce",
+                    "name": "Royal Gala Apples",
+                    "price": "$1.99 / lb"
+                },
+                {
+                    "sub_category": "Produce",
+                    "name": "Carrots",
+                    "price": "$2.49 – 2LBS"
+                },
+                {
+                    "sub_category": "Produce",
+                    "name": "Onions",
+                    "price": "$1.99 – 2LBS"
+                }
+            ]
+        }
+    ]
+}

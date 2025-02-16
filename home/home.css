@@ -1,0 +1,172 @@
+/* Home Page Specific Styles */
+
+/* Outer Container to Structure the Layout */
+.home-container {
+    display: flex;
+    flex-direction: column; /* Ensures vertical stacking */
+    align-items: center;
+    width: 100%;
+}
+/* Home Content Layout */
+.home-content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensures both boxes take up equal height */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    padding: 30px 20px;
+}
+
+/* Content Body Text */
+.content-body {
+    font-family: 'Inter', sans-serif; /* Font for the content */
+    font-size: 18px; /* Adjusted font size */
+    padding: 40px 20px; /* Adjusted padding for better spacing */
+    max-width: 566px;
+    max-height: 377px;
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Ensures paragraphs stack vertically */
+    align-items: flex-start; /* Aligns text to the left */
+    text-align: left; /* Ensures text does not break excessively */
+    margin: 0 auto; /* Centers the content box */
+    word-wrap: break-word; /* Ensures long words do not overflow */
+    overflow-wrap: break-word; /* Alternative wrapping support */
+    white-space: normal; /* Allows normal text wrapping */
+    line-height: 1.5; /* Improves readability */
+}
+
+/* Ensure Bold First Letter in Content */
+.content-body p > strong {
+    font-weight: bold;
+}
+
+/* Home Page Hours Section */
+.hours-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Row container for each day and time */
+.hours-entry {
+    display: flex;
+    justify-content: space-between; /* Ensures separation between days and times */
+    align-items: center; /* Keeps text vertically aligned */
+    width: 85%; /* Adjust width to fit inside the box */
+    max-width: 500px;
+    padding: 5px 0; /* Reduce top and bottom padding */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Subtle separator line */
+    line-height: 1; /* Reduces line spacing */
+}
+
+/* Style for the days */
+.hours-day {
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 25px; /* Keep font size large */
+    font-weight: bold;
+    flex: 1;
+    text-align: left;
+    white-space: nowrap; /* Prevents line break */
+}
+
+/* Style for the times */
+.hours-time {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px; /* Keep font size large but scaled properly */
+    font-style: italic;
+    flex: 1;
+    text-align: right;
+    white-space: nowrap;
+    min-width: 140px;
+}
+
+/* Adjust last row to remove unnecessary border */
+.hours-entry:last-child {
+    border-bottom: none;
+}
+
+/* Contact Section Box */
+.contact-box {
+    background-color: #D5D4D4;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 960px;
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+    position: relative;
+}
+
+/* Contact Content Layout */
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Google Map Styling */
+.contact-map iframe {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+/* Contact Details */
+.contact-details {
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    flex: 1;
+    min-width: 200px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures everything is centered */
+    gap: 10px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-form button {
+    background-color: rgba(213, 209, 92, 0.9);
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 50%; /* Ensures proper alignment */
+    text-align: center;
+}
+
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    max-width: 195px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.store-status {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.open {
+    color: green;
+}
+
+.closed {
+    color: red;
+}

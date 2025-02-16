@@ -1,0 +1,19 @@
+{
+    "about": [
+        {
+            "title": "Origin",
+            "content": "Nestled in the heart of the Marche Market in Ottawa, our family farm began as a humble dream to bring the freshest, locally-grown produce to our community. With roots in sustainable agriculture and a passion for preserving traditional farming methods, we’ve been cultivating quality and trust since day one.",
+            "image": "about/images/1.png"
+        },
+        {
+            "title": "Our Impact",
+            "content": "Through regenerative farming practices, we nurture the land while providing nutrient-rich fruits, vegetables, and artisanal goods. Partnering with local vendors and chefs, we aim to reduce our carbon footprint and create a thriving, interconnected food ecosystem for Ottawa.",
+            "image": "about/images/2.png"
+        },
+        {
+            "title": "Our Future",
+            "content": "We envision a greener tomorrow—expanding our reach to more families, embracing innovative farming techniques, and fostering education around sustainable living. Together, we’re growing a healthier, more vibrant community.",
+            "image": "about/images/3.png"
+        }
+    ]
+}

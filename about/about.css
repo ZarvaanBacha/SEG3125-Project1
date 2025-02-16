@@ -1,0 +1,59 @@
+@import url("../assets/css/components.css"); /* Import shared components */
+
+/* About Page Styling */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+/* About Sections */
+.about-section {
+    max-width: 960px;
+    width: 90%;
+    background-color: #D5D4D4;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* About Text Content */
+.about-text {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+    padding-right: 20px;
+}
+
+/* About Image Styling */
+.about-image {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure responsive layout */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        padding-right: 0;
+    }
+
+    .about-image {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+}

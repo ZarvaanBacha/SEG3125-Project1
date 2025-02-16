@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Marché Market</title>
+    <link rel="stylesheet" href="../assets/css/master.css">
+    <link rel="stylesheet" href="../products/products.css">
+    <script src="products.js" defer></script>
+</head>
+<body>
+
+    <div class="products-container">
+        
+        <!-- Main Content Box for Categories -->
+        <div class="content-box products-content-box">
+            <div class="content-title">
+                <div class="content-title-text">Locally Sourced Products</div>
+            </div>
+            <div class="content-body" id="categories-grid">
+                <!-- Categories dynamically loaded -->
+            </div>
+        </div>
+
+        <!-- Overlay Content Box for Brand Listing -->
+        <div class="content-box brands-overlay hidden" id="brands-box">
+            <div class="content-title">
+                <div class="content-title-text" id="selected-category"></div>
+            </div>
+            <div class="content-body">
+                <button id="back-to-categories">Back</button>
+                <div id="brands-list"></div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

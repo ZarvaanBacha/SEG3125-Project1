@@ -1,0 +1,107 @@
+@import url("../assets/css/components.css"); /* Import common component styles */
+
+/* Products Page Specific Styling */
+.products-container {
+    display: flex;
+    justify-content: center;  /* Centers the content */
+    align-items: center;
+    flex-direction: column;   /* Ensures items stack vertically */
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* Content Box Specific to Products Page */
+.products-content-box {
+    max-width: 960px; /* Larger width for a central feel */
+    width: 90%;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Aligns Category Grid */
+#categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+    justify-items: center; /* Centers items inside the grid */
+    padding: 20px;
+}
+
+/* Category Tile Styling */
+.category-tile {
+    background-color: #D5D4D4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 100%;
+    max-width: 250px;
+}
+
+.category-tile:hover {
+    background-color: #D5D15C;
+    max-width: 150px
+    
+}
+
+/* Overlay Content Box for Brand Listings */
+.brands-overlay {
+    position: fixed;
+    top: 8%;  /* Moves it slightly down */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-height: 80vh;
+    background: #D5D4D4;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+
+/* Hide the category title when brands are displayed */
+.brands-overlay .content-title {
+    display: none;
+}
+
+
+/* Individual Brand Box */
+.brand-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+/* Move Back Button to Top Right */
+#back-to-categories {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #D5D15C;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Ensure the footer stays behind the overlay */
+footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* Hide by default */
+.hidden {
+    display: none;
+}

@@ -1,0 +1,117 @@
+@import url("../assets/css/components.css"); /* Import shared components */
+
+/* Specials Page Styling */
+.specials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+/* Specials Category Box */
+.specials-category {
+    max-width: 1100px; /* Increased width for landscape images */
+    width: 90%;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #D5D4D4; /* Restore background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Restore shadow */
+    border: 1px solid #bdbdbd; /* Restore border */
+    text-align: left; /* Align text */
+    position: relative; /* Ensure proper layering */
+}
+
+/* Specials Content Layout */
+.specials-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px, 20px;
+}
+
+/* Specials List (Text Content) */
+.specials-list {
+    flex: 1;
+    font-size: 28px;
+    line-height: 1;
+    padding-right: 20px;
+}
+
+/* Individual Special Item */
+.special-item {
+    font-size: 16px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #bdbdbd;
+    padding-bottom: 5px;
+}
+
+/* Category Title Styling */
+.content-title {
+    background-color: rgba(213, 209, 92, 0.9);
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2px;
+    z-index: 10;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Specials Images */
+.specials-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 0 0 45%;
+    justify-content: flex-end;
+}
+
+/* Image Styling */
+.special-image {
+    width: 300px; /* Wider for landscape format */
+    height: 200px; /* Adjust height for proper aspect ratio */
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #bdbdbd; /* Restore border */
+}
+
+/* Ensure text and images are aligned */
+@media (max-width: 1024px) {
+    .specials-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .specials-list {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .specials-images {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .special-image {
+        width: 280px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .special-image {
+        width: 250px;
+        height: 160px;
+    }
+}
