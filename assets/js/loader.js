@@ -10,7 +10,7 @@ function loadContent(pagePath, menuItem = null) {
         .then(html => {
             const main = document.querySelector("main");
             if (!main) {
-                console.error("❌ ERROR: <main> tag not found in master.html!");
+                console.error("❌ ERROR: <main> tag not found in index.html!");
                 return;
             }
             
@@ -159,7 +159,7 @@ function loadContent(pagePath, menuItem = null) {
         .then(html => {
             const main = document.querySelector("main");
             if (!main) {
-                console.error("❌ ERROR: <main> tag not found in master.html!");
+                console.error("❌ ERROR: <main> tag not found in index.html!");
                 return;
             }
             
