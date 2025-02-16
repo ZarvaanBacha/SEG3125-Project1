@@ -10,9 +10,9 @@ if (!document.getElementById("categories-grid")) {
     document.body.classList.add("products-page");
 }
 
-// 🔄 Fetch and load product categories
+// 🔄 Fetch & Load Product Categories
 function loadProductCategories() {
-    console.log("🔄 Attempting to fetch products.json...");
+    console.log("🔄 Fetching products.json...");
 
     fetch("products/products.json") // Ensure correct path
         .then(response => {
@@ -25,58 +25,44 @@ function loadProductCategories() {
                 console.error("❌ ERROR: No 'products' key found in JSON!");
                 return;
             }
-            processProducts(data.products);
+            displayCategories(data.products);
         })
         .catch(error => console.error("❌ Error fetching products.json:", error));
 }
 
-// 🏷️ Process JSON into categories
-function processProducts(products) {
-    console.log("🔄 Processing JSON into categories...");
+// ✅ Display Product Categories with Background Images
+function displayCategories(products) {
+    console.log("🔄 Processing product categories...");
 
-    const categories = {};
-
-    products.forEach(product => {
-        if (!categories[product.category]) {
-            categories[product.category] = [];
-        }
-        if (!categories[product.category].some(b => b.brand === product.brand)) {
-            categories[product.category].push({
-                brand: product.brand,
-                sub_category: product.sub_category,
-                description: product.description
-            });
-        }
-    });
-
-    console.log("✅ Categories Processed:", Object.keys(categories));
-    loadCategories(categories);
-}
-
-// ✅ Populate Categories Grid
-function loadCategories(categories) {
     const categoriesGrid = document.getElementById("categories-grid");
-
     if (!categoriesGrid) {
         console.error("❌ ERROR: #categories-grid element not found!");
         return;
     }
 
-    categoriesGrid.innerHTML = ""; // Clear previous data
+    categoriesGrid.innerHTML = ""; // Clear previous content
 
-    Object.keys(categories).forEach(category => {
+    products.forEach(category => {
         const categoryTile = document.createElement("div");
         categoryTile.classList.add("category-tile");
-        categoryTile.innerHTML = `<h3>${category}</h3>`;
-        categoryTile.addEventListener("click", () => showBrands(category, categories[category]));
+        categoryTile.innerHTML = `<h3>${category.category}</h3>`;
+
+        // ✅ Apply Background Image
+        if (category.image) {
+            categoryTile.style.backgroundImage = `url(${category.image})`;
+        }
+
+        categoryTile.addEventListener("click", () => showBrands(category.category, category.items));
         categoriesGrid.appendChild(categoryTile);
     });
 
-    console.log("✅ Categories Loaded:", Object.keys(categories));
+    console.log("✅ Categories Loaded:", products.map(cat => cat.category));
 }
 
-function showBrands(category, brands) {
-    console.log(`🟡 Showing brands for category: ${category}`);
+
+// ✅ Show Brands & Items in a Category
+function showBrands(categoryName, items) {
+    console.log(`🟡 Showing products for category: ${categoryName}`);
 
     document.getElementById("categories-grid").classList.add("hidden");
 
@@ -86,25 +72,25 @@ function showBrands(category, brands) {
     // Hide the original category title
     document.querySelector(".products-content-box .content-title").style.display = "none";
 
-    document.getElementById("selected-category").textContent = category;
+    document.getElementById("selected-category").textContent = categoryName;
     const brandsList = document.getElementById("brands-list");
     brandsList.innerHTML = "";
 
-    brands.forEach(brand => {
+    items.forEach(item => {
         const brandCard = document.createElement("div");
         brandCard.classList.add("brand-card");
         brandCard.innerHTML = `
-            <h3>${brand.brand}</h3>
-            <p><strong>Type:</strong> ${brand.sub_category}</p>
-            <p>${brand.description}</p>
+            <h3>${item.brand}</h3>
+            <p><strong>Type:</strong> ${item.sub_category}</p>
+            <p>${item.description}</p>
         `;
         brandsList.appendChild(brandCard);
     });
 
-    console.log("✅ Displaying brands:", brands);
+    console.log("✅ Displaying brands:", items);
 }
 
-// Restore the title when going back
+// 🔙 Return to Categories View
 document.getElementById("back-to-categories").addEventListener("click", () => {
     console.log("🔄 Returning to categories...");
 
@@ -113,14 +99,4 @@ document.getElementById("back-to-categories").addEventListener("click", () => {
 
     // Show the original category title again
     document.querySelector(".products-content-box .content-title").style.display = "block";
-});
-
-
-
-// 🔙 Back to Categories
-document.getElementById("back-to-categories").addEventListener("click", () => {
-    console.log("🔄 Returning to categories...");
-
-    document.getElementById("categories-grid").classList.remove("hidden");
-    document.getElementById("brands-box").classList.add("hidden");
 });

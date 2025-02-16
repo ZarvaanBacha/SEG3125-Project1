@@ -1,173 +1,186 @@
 {
-    "products": [
-      {
-        "category": "Meat",
-        "sub_category": "Sausages & Burgers",
-        "brand": "In-House",
-        "description": "20 varieties of sausages made in-store with fresh meat, hand-mixed spices, and natural casings. Most are gluten-free and nitrate-free. We also offer beef, chicken, lamb, bison, and breakfast sausages along with 10 types of gourmet burgers."
-      },
-      {
-        "category": "Meat",
-        "sub_category": "Pork",
-        "brand": "Lavergne",
-        "description": "Locally raised, antibiotic-free pork. Includes popular single and double smoked bacon."
-      },
-      {
-        "category": "Meat",
-        "sub_category": "Beef",
-        "brand": "Enright Cattle Co.",
-        "description": "Sustainable, hormone-free beef from Tweed, ON. Cattle are raised on farm-grown grass and grains. Also offers AA & AAA quality Western Canada beef."
-      },
-      {
-        "category": "Meat",
-        "sub_category": "Lamb",
-        "brand": "Beverly Creek",
-        "description": "Fresh lamb sourced weekly from Millgrove, ON. Limited availability, pre-order recommended."
-      },
-      {
-        "category": "Meat",
-        "sub_category": "Deli & Charcuterie",
-        "brand": "Various",
-        "description": "Wide variety of local and specialty deli meats and charcuterie options."
-      },
-      {
-        "category": "Meat",
-        "sub_category": "Charcuterie",
-        "brand": "Seed to Sausage",
-        "description": "Ethically cured meats made with natural ingredients, sourced locally from Ottawa."
-      },
-      {
-        "category": "Meat",
-        "sub_category": "Charcuterie",
-        "brand": "Creel & Gambrel",
-        "description": "High-quality charcuterie products, including bresaola and summer salami, from Kingston, ON."
-      },
-      {
-        "category": "Prepared Meals",
-        "sub_category": "Ready-to-Go Meals",
-        "brand": "In-House",
-        "description": "Diverse selection of fresh, homemade meals prepared weekly by our chefs using in-store products. Includes soups, sauces, chili, and meals like Butter Chicken and Chicken Pesto Pasta."
-      },
-      {
-        "category": "Dairy",
-        "sub_category": "Cheese",
-        "brand": "Various",
-        "description": "Specialty cheeses from Montebello, Quebec, as well as imported selections from England and France."
-      },
-      {
-        "category": "Dairy",
-        "sub_category": "Cheese",
-        "brand": "La Trappe à Fromage",
-        "description": "Fresh cheese curds made daily in Gatineau."
-      },
-      {
-        "category": "Bakery",
-        "sub_category": "Bread",
-        "brand": "True Loaf Bread Company",
-        "description": "Ottawa-based bakery offering high-quality artisan breads, including baguettes, sourdough, and seed breads."
-      },
-      {
-        "category": "Bakery",
-        "sub_category": "Bread",
-        "brand": "Boulangerie Francais/The French Baker",
-        "description": "Fresh baguettes, French breads, and pastries delivered daily from Ottawa’s Byward Market."
-      },
-      {
-        "category": "Bakery",
-        "sub_category": "Bread",
-        "brand": "Portuguese Bakery",
-        "description": "Handcrafted breads, including French bread and rye, made fresh daily in Ottawa."
-      },
-      {
-        "category": "Bakery",
-        "sub_category": "Bread",
-        "brand": "Hanna’s Bakery",
-        "description": "White and whole wheat pita bread delivered fresh three times a week."
-      },
-      {
-        "category": "Bakery",
-        "sub_category": "Bread",
-        "brand": "Your Bread Box Sourdough",
-        "description": "Locally made sourdough breads such as Jalapeño & Cheddar, Garlic & Rosemary, and Everything Bagel. Naturally fermented for 72 hours."
-      },
-      {
-        "category": "Produce",
-        "sub_category": "Fresh Produce",
-        "brand": "In-House",
-        "description": "Daily fresh fruits and vegetables. Stocks seasonal Ontario and Quebec produce whenever possible."
-      },
-      {
-        "category": "Grocery",
-        "sub_category": "Maple Syrup",
-        "brand": "Ennis Maple Syrup",
-        "description": "100% pure Canadian maple syrup from Balderson, ON. Produced using traditional wood fire techniques."
-      },
-      {
-        "category": "Grocery",
-        "sub_category": "Honey",
-        "brand": "Heavenly Honey",
-        "description": "Locally made fresh honey, creamed honey, and cinnamon honey from Gloucester, ON."
-      },
-      {
-        "category": "Grocery",
-        "sub_category": "Chocolate",
-        "brand": "Hummingbird Chocolate",
-        "description": "Handcrafted chocolate made in Almonte, ON, with ethically sourced cacao beans."
-      },
-      {
-        "category": "Grocery",
-        "sub_category": "Chocolate",
-        "brand": "Rochef Chocolate",
-        "description": "High-quality chocolate made in the Outaouais region, serving gourmet tastes for over 10 years."
-      },
-      {
-        "category": "Grocery",
-        "sub_category": "Hot Sauce",
-        "brand": "Haico Hot Sauce",
-        "description": "Handcrafted hot sauces made from homegrown peppers, blending flavors from various cultures."
-      },
-      {
-        "category": "Grocery",
-        "sub_category": "Mixers",
-        "brand": "Fevertree",
-        "description": "Premium mixers made with all-natural ingredients, designed to complement fine spirits."
-      },
-      {
-        "category": "Coffee & Tea",
-        "sub_category": "Coffee",
-        "brand": "Happy Goat Coffee Company",
-        "description": "Ottawa-based coffee roaster sourcing high-quality beans from small farmers worldwide."
-      },
-      {
-        "category": "Coffee & Tea",
-        "sub_category": "Coffee",
-        "brand": "Francesco’s Coffee Company",
-        "description": "Locally roasted fair-trade coffee with distinct, elegant flavors."
-      },
-      {
-        "category": "Coffee & Tea",
-        "sub_category": "Coffee",
-        "brand": "Muskoka Roastery Coffee Company",
-        "description": "Handcrafted, freshly roasted coffee from Huntsville, Ontario."
-      },
-      {
-        "category": "Coffee & Tea",
-        "sub_category": "Coffee",
-        "brand": "Cloud Forest Coffee",
-        "description": "Organic coffee imported from the Intag valley in Ecuador, supporting local farmers resisting mining."
-      },
-      {
-        "category": "Coffee & Tea",
-        "sub_category": "Coffee",
-        "brand": "DODJIVI Premium Organic Mushroom Coffee",
-        "description": "Coffee alternative made with organic Reishi mushrooms, promoting energy and stress relief without caffeine crashes."
-      },
-      {
-        "category": "Grocery",
-        "sub_category": "General",
-        "brand": "Various",
-        "description": "A variety of organic and natural products, plus everyday essentials. Customer suggestions welcomed."
-      }
-    ]
-  }
-  
+  "products": [
+    {
+      "category": "Meat",
+      "image": "products/thumbnails/meat.png",
+      "items": [
+        {
+          "sub_category": "Sausages & Burgers",
+          "brand": "In-House",
+          "description": "20 varieties of sausages made in-store with fresh meat, hand-mixed spices, and natural casings. Most are gluten-free and nitrate-free. We also offer beef, chicken, lamb, bison, and breakfast sausages along with 10 types of gourmet burgers."
+        },
+        {
+          "sub_category": "Pork",
+          "brand": "Lavergne",
+          "description": "Locally raised, antibiotic-free pork. Includes popular single and double smoked bacon."
+        },
+        {
+          "sub_category": "Beef",
+          "brand": "Enright Cattle Co.",
+          "description": "Sustainable, hormone-free beef from Tweed, ON. Cattle are raised on farm-grown grass and grains. Also offers AA & AAA quality Western Canada beef."
+        },
+        {
+          "sub_category": "Lamb",
+          "brand": "Beverly Creek",
+          "description": "Fresh lamb sourced weekly from Millgrove, ON. Limited availability, pre-order recommended."
+        },
+        {
+          "sub_category": "Deli & Charcuterie",
+          "brand": "Various",
+          "description": "Wide variety of local and specialty deli meats and charcuterie options."
+        },
+        {
+          "sub_category": "Charcuterie",
+          "brand": "Seed to Sausage",
+          "description": "Ethically cured meats made with natural ingredients, sourced locally from Ottawa."
+        },
+        {
+          "sub_category": "Charcuterie",
+          "brand": "Creel & Gambrel",
+          "description": "High-quality charcuterie products, including bresaola and summer salami, from Kingston, ON."
+        }
+      ]
+    },
+    {
+      "category": "Prepared Meals",
+      "image": "products/thumbnails/prep.png",
+      "items": [
+        {
+          "sub_category": "Ready-to-Go Meals",
+          "brand": "In-House",
+          "description": "Diverse selection of fresh, homemade meals prepared weekly by our chefs using in-store products. Includes soups, sauces, chili, and meals like Butter Chicken and Chicken Pesto Pasta."
+        }
+      ]
+    },
+    {
+      "category": "Dairy",
+      "image": "products/thumbnails/dairy.png",
+      "items": [
+        {
+          "sub_category": "Cheese",
+          "brand": "Various",
+          "description": "Specialty cheeses from Montebello, Quebec, as well as imported selections from England and France."
+        },
+        {
+          "sub_category": "Cheese",
+          "brand": "La Trappe à Fromage",
+          "description": "Fresh cheese curds made daily in Gatineau."
+        }
+      ]
+    },
+    {
+      "category": "Bakery",
+      "image": "products/thumbnails/bakery.png",
+      "items": [
+        {
+          "sub_category": "Bread",
+          "brand": "True Loaf Bread Company",
+          "description": "Ottawa-based bakery offering high-quality artisan breads, including baguettes, sourdough, and seed breads."
+        },
+        {
+          "sub_category": "Bread",
+          "brand": "Boulangerie Francais/The French Baker",
+          "description": "Fresh baguettes, French breads, and pastries delivered daily from Ottawa’s Byward Market."
+        },
+        {
+          "sub_category": "Bread",
+          "brand": "Portuguese Bakery",
+          "description": "Handcrafted breads, including French bread and rye, made fresh daily in Ottawa."
+        },
+        {
+          "sub_category": "Bread",
+          "brand": "Hanna’s Bakery",
+          "description": "White and whole wheat pita bread delivered fresh three times a week."
+        },
+        {
+          "sub_category": "Bread",
+          "brand": "Your Bread Box Sourdough",
+          "description": "Locally made sourdough breads such as Jalapeño & Cheddar, Garlic & Rosemary, and Everything Bagel. Naturally fermented for 72 hours."
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "image": "products/thumbnails/produce.png",
+      "items": [
+        {
+          "sub_category": "Fresh Produce",
+          "brand": "In-House",
+          "description": "Daily fresh fruits and vegetables. Stocks seasonal Ontario and Quebec produce whenever possible."
+        }
+      ]
+    },
+    {
+      "category": "Grocery",
+      "image": "products/thumbnails/grocery.png",
+      "items": [
+        {
+          "sub_category": "Maple Syrup",
+          "brand": "Ennis Maple Syrup",
+          "description": "100% pure Canadian maple syrup from Balderson, ON. Produced using traditional wood fire techniques."
+        },
+        {
+          "sub_category": "Honey",
+          "brand": "Heavenly Honey",
+          "description": "Locally made fresh honey, creamed honey, and cinnamon honey from Gloucester, ON."
+        },
+        {
+          "sub_category": "Chocolate",
+          "brand": "Hummingbird Chocolate",
+          "description": "Handcrafted chocolate made in Almonte, ON, with ethically sourced cacao beans."
+        },
+        {
+          "sub_category": "Chocolate",
+          "brand": "Rochef Chocolate",
+          "description": "High-quality chocolate made in the Outaouais region, serving gourmet tastes for over 10 years."
+        },
+        {
+          "sub_category": "Hot Sauce",
+          "brand": "Haico Hot Sauce",
+          "description": "Handcrafted hot sauces made from homegrown peppers, blending flavors from various cultures."
+        },
+        {
+          "sub_category": "Mixers",
+          "brand": "Fevertree",
+          "description": "Premium mixers made with all-natural ingredients, designed to complement fine spirits."
+        },
+        {
+          "sub_category": "General",
+          "brand": "Various",
+          "description": "A variety of organic and natural products, plus everyday essentials. Customer suggestions welcomed."
+        }
+      ]
+    },
+    {
+      "category": "Coffee & Tea",
+      "image": "products/thumbnails/coffee.png",
+      "items": [
+        {
+          "sub_category": "Coffee",
+          "brand": "Happy Goat Coffee Company",
+          "description": "Ottawa-based coffee roaster sourcing high-quality beans from small farmers worldwide."
+        },
+        {
+          "sub_category": "Coffee",
+          "brand": "Francesco’s Coffee Company",
+          "description": "Locally roasted fair-trade coffee with distinct, elegant flavors."
+        },
+        {
+          "sub_category": "Coffee",
+          "brand": "Muskoka Roastery Coffee Company",
+          "description": "Handcrafted, freshly roasted coffee from Huntsville, Ontario."
+        },
+        {
+          "sub_category": "Coffee",
+          "brand": "Cloud Forest Coffee",
+          "description": "Organic coffee imported from the Intag valley in Ecuador, supporting local farmers resisting mining."
+        },
+        {
+          "sub_category": "Coffee",
+          "brand": "DODJIVI Premium Organic Mushroom Coffee",
+          "description": "Coffee alternative made with organic Reishi mushrooms, promoting energy and stress relief without caffeine crashes."
+        }
+      ]
+    }
+  ]
+}

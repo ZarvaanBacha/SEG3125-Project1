@@ -18,27 +18,58 @@
     padding: 40px 20px;
 }
 
-/* Aligns Category Grid */
+/* ✅ Ensure the grid layout is well-spaced */
 #categories-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-    gap: 20px;
-    justify-items: center; /* Centers items inside the grid */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));  /* Flexible sizing */
+    gap: 20px; /* Ensures spacing */
+    justify-items: center; /* Centers grid items */
     padding: 20px;
+    max-width: 90%; /* Prevents items from stretching */
+    margin: 0 auto; /* Centers the grid */
 }
 
-/* Category Tile Styling */
+/* ✅ Properly Sized Category Tiles */
 .category-tile {
-    background-color: #D5D4D4;
-    padding: 20px;
-    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 200px;  /* Set a consistent size */
+    height: 150px;  /* Fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
     text-align: center;
-    font-size: 24px;
-    cursor: pointer;
-    transition: 0.3s ease;
-    width: 100%;
-    max-width: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
 }
+
+/* ✅ Prevents images from overlapping */
+.category-tile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.65); /* 30% opacity overlay */
+    border-radius: 10px;
+}
+
+/* ✅ Ensure Text is Visible */
+.category-tile h3 {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    font-size: 22px;
+}
+
+
 
 .category-tile:hover {
     background-color: #D5D15C;
@@ -86,7 +117,7 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #D5D15C;
+    background-color: rgb(213, 209, 92);
     border: none;
     padding: 10px 15px;
     font-size: 16px;
